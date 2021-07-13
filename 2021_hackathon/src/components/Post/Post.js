@@ -24,8 +24,12 @@ const Post = () => {
             </div>
             <div>만들었습니다</div>
           </div>
-          <Comment />
-          <Comment />
+          <div className="count">
+            <img className="count-img" src={CommentIcon} alt="comment" />
+            <span className="count-counter">댓글 2개</span>
+          </div>
+          <Comment message={"댓글 하나"} />
+          <Comment message={"댓글 둘"} />
         </div>
       </PageTemplate>
     </>
