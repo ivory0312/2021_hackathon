@@ -9,15 +9,34 @@
   width: 100vw;
   min-height: 80px;
   max-height: 80px;
-  min-width: 1540px;
-  justify-content: center;
+  min-width: 1440px;
+  justify-content: space-between;
   align-items: flex-start;
-  flex-direction: column;
-  padding: 0 270px;
+  padding: 13px 270px;
   background: linear-gradient(to right, #5047cb, #7a47cb);
 
   &-logo {
+    display: flex;
+    justify-content: space-between;
     width: 50px;
     height: 50px;
+  }
+  &-login {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+  }
+  &-login:hover {
+    background-color: rgba(255, 255, 255, 0.25);
   }
 }

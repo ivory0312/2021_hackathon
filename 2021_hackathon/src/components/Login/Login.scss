@@ -1,0 +1,22 @@
+.loginWrap {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-color: #f3f3f3;
+}
+.login {
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+
+  &-logo {
+    width: 100px;
+  }
+}

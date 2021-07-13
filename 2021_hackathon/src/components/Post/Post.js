@@ -28,8 +28,12 @@ const Post = () => {
             <img className="count-img" src={CommentIcon} alt="comment" />
             <span className="count-counter">댓글 2개</span>
           </div>
-          <Comment message={"댓글 하나"} />
-          <Comment message={"댓글 둘"} />
+          <Comment
+            name={"익명1"}
+            date={"7월 14일 1:21"}
+            message={"댓글 하나"}
+          />
+          <Comment name={"익명2"} date={"7월 14일 4:33"} message={"댓글 둘"} />
         </div>
       </PageTemplate>
     </>
