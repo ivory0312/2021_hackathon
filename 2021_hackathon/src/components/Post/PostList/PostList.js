@@ -5,7 +5,7 @@ import Comment from "../../../assets/comment.svg";
 
 const PostList = () => {
   const { data, onclick } = useFetchPosts();
-
+  console.log(data);
   return (
     <>
       {data?.data.map((item) => (
