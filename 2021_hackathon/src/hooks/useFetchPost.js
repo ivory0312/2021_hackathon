@@ -1,15 +1,14 @@
 import { useEffect, useState } from "react";
-import { useHistory, useParams } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { getPost } from "../lib/post.api";
 
 const useFetchPost = () => {
   const history = useHistory();
-  const { idx } = useParams();
   const [data, setData] = useState();
 
   //해당 index의 값 가져와서 url로 보내는 함수
   const onclick = (index) => {
-    history.push(`/post/${index}`);
+    history.push(`/post/detail/${index}`);
   };
 
   //한 개의 값을 가져오는 함수

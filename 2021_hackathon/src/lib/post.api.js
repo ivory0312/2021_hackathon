@@ -7,8 +7,6 @@ export const getPosts = async () => {
 };
 
 export const getPost = async () => {
-  console.log("1232");
   const { data } = await customAxios.get(`/post`);
-  console.log(data);
   return data;
 };

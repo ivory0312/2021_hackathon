@@ -6,6 +6,7 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+  background-color: #ebeef1;
 
   &-header {
     position: fixed;
@@ -18,7 +19,6 @@
     padding-bottom: 210px;
     max-width: 900px;
     min-width: 900px;
-    min-height: 930px;
     margin: 0 auto;
   }
 }

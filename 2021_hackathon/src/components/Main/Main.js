@@ -1,17 +1,10 @@
 import PageTemplate from "../Common/PageTemplate/PageTemplate";
-import useFetchPost from "../../hooks/useFetchPost";
+import PostList from "../Post/PostList/PostList";
 
 const Main = () => {
-  const { data, onclick } = useFetchPost();
-
-  console.log(data);
   return (
     <PageTemplate>
-      {data?.data.map((item) => (
-        <div onClick={() => onclick(item.id)} key={item.id}>
-          {item.title}
-        </div>
-      ))}
+      <PostList />
     </PageTemplate>
   );
 };

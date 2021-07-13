@@ -1,6 +1,4 @@
-import { Children } from "react";
 import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 import "./PageTemplate.scss";
 
 const PageTemplate = ({ children }) => {

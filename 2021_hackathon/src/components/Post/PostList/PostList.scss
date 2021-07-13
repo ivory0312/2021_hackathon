@@ -1,0 +1,45 @@
+.postList {
+  width: auto;
+  height: auto;
+  justify-content: center;
+  background-color: white;
+  margin-bottom: 15px;
+  border-radius: 10px;
+
+  &-top {
+    padding: 15px 20px;
+
+    &-profile {
+      height: 50px;
+      padding-top: 7px;
+
+      &-img {
+        float: left;
+        width: 30px;
+      }
+      &-name {
+        float: left;
+        width: 70px;
+        margin: 5px 0 0 5px;
+      }
+    }
+    &-title {
+      height: 30px;
+      font-weight: bold;
+    }
+  }
+  &-bottom {
+    padding: 15px 20px;
+    border-radius: 0 0 10px 10px;
+    background-color: #f6f6f6;
+    font-size: 14px;
+    color: #c7c7cc;
+
+    &-comment {
+      margin-left: 5px;
+    }
+    &-date {
+      float: right;
+    }
+  }
+}
