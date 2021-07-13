@@ -8,7 +8,8 @@ const PostList = () => {
 
   return (
     <>
-      {data?.data.map((item) => (
+      123
+      {/* {data?.data.map((item) => (
         <div className="postList" onClick={() => onclick(item.id)}>
           <div className="postList-top">
             <div className="postList-top-profile">
@@ -30,7 +31,7 @@ const PostList = () => {
             <span className="postList-bottom-date">{item.date}</span>
           </div>
         </div>
-      ))}
+      ))} */}
     </>
   );
 };

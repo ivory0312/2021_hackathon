@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
-import { getPost, getPosts } from "../lib/post.api";
+import { getPosts } from "../lib/post.api";
 
 const useFetchPosts = () => {
   const history = useHistory();
@@ -13,7 +13,6 @@ const useFetchPosts = () => {
   const requestFetch = async () => {
     try {
       const data = await getPosts();
-      console.log(data);
       setData(data);
     } catch (error) {}
   };
