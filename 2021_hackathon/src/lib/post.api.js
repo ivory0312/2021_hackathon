@@ -6,7 +6,8 @@ export const getPosts = async () => {
   return data;
 };
 
-export const getPost = async () => {
-  const { data } = await customAxios.get(`/post`);
+export const getPost = async (postId) => {
+  const { data } = await customAxios.get(`/post/${postId}`);
+
   return data;
 };

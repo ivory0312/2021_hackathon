@@ -1,10 +1,11 @@
-import useFetchPost from "../../../hooks/useFetchPost";
+import useFetchPosts from "../../../hooks/useFetchPosts";
 import "./PostList.scss";
 import Profile from "../../../assets/profile.svg";
 import Comment from "../../../assets/comment.svg";
 
 const PostList = () => {
-  const { data, onclick } = useFetchPost();
+  const { data, onclick } = useFetchPosts();
+  console.log(data);
 
   return (
     <>
