@@ -1,0 +1,46 @@
+.post {
+  padding: 25px;
+  background-color: white;
+
+  &-profile {
+    height: 60px;
+
+    &-img {
+      float: left;
+      width: 40px;
+    }
+    &-name {
+      float: left;
+      margin: 10px 0 0 10px;
+    }
+    &-date {
+      float: right;
+      color: #c7c7cc;
+      margin-top: 5px;
+    }
+  }
+  &-header {
+    margin-bottom: 20px;
+
+    &-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+}
+.count {
+  padding: 10px 25px 15px 25px;
+  margin-bottom: 10px;
+
+  &-img {
+    float: left;
+    width: 20px;
+    margin-top: 10px;
+  }
+  &-counter {
+    float: left;
+    font-size: 14px;
+    margin: 8px 0 10px 10px;
+    color: #c7c7c7;
+  }
+}

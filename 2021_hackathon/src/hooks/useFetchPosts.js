@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
-import { useHistory, useParams } from "react-router-dom";
-import { getPost } from "../lib/post.api";
+import { useHistory } from "react-router-dom";
+import { getPost, getPosts } from "../lib/post.api";
 
-const useFetchPost = () => {
+const useFetchPosts = () => {
   const history = useHistory();
-  const { idx } = useParams();
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
 
   const onclick = (index) => {
     history.push(`/post/${index}`);
@@ -13,7 +12,8 @@ const useFetchPost = () => {
 
   const requestFetch = async () => {
     try {
-      const data = await getPost(idx);
+      const data = await getPosts();
+      console.log(data);
       setData(data);
     } catch (error) {}
   };
@@ -25,4 +25,4 @@ const useFetchPost = () => {
   return { data, onclick };
 };
 
-export default useFetchPost;
+export default useFetchPosts;

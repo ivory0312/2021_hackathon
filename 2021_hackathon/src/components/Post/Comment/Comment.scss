@@ -1,0 +1,29 @@
+.comment {
+  padding: 20px 0 25px 20px;
+
+  &-profile {
+    &-img {
+      float: left;
+      width: 30px;
+    }
+    &-box {
+      width: 95%;
+      float: left;
+      padding: 15px;
+      margin: 0 0 10px 10px;
+      border-radius: 5px;
+      background-color: white;
+
+      &-name {
+        font-weight: bold;
+      }
+      &-date {
+        margin-left: 10px;
+        color: #c7c7c7;
+      }
+    }
+  }
+  &-text {
+    margin-top: 10px;
+  }
+}
