@@ -7,12 +7,12 @@ const useFetchPosts = () => {
   const [data, setData] = useState([]);
 
   const onclick = (index) => {
-    history.push(`/post/${index}`);
+    history.push(`/post/detail/${index}`);
   };
 
   const requestFetch = async () => {
     try {
-      const data = await getPosts();
+      const { data } = await getPosts();
       setData(data);
     } catch (error) {}
   };

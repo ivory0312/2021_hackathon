@@ -4,11 +4,11 @@ import { getPost } from "../lib/post.api";
 
 const useFetchPost = () => {
   const { idx } = useParams();
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
 
   const requestFetch = useCallback(async () => {
     try {
-      const data = await getPost(idx);
+      const { data } = await getPost(idx);
       setData(data);
     } catch (error) {}
   }, []);

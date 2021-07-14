@@ -1,7 +1,9 @@
 import Logo from "../../assets/logo1.png";
+import useFetchLogin from "../../hooks/useFetchLogin";
 import "./Login.scss";
 
 const Login = () => {
+  const { data, input, onChangeInput, requestLogin } = useFetchLogin();
   return (
     <>
       <div className="loginWrap">
@@ -9,9 +11,21 @@ const Login = () => {
           <img className="login-logo" src={Logo} alt="logo" />
           <div className="login-input">
             <div className="login-input-title">아이디</div>
-            <input className="login-input-inputBox" type="text" />
+            <input
+              onChange={onChangeInput}
+              value={input.id}
+              name="id"
+              className="login-input-inputBox"
+              type="text"
+            />
             <div className="login-input-title">비밀번호</div>
-            <input className="login-input-inputBox" type="text" />
+            <input
+              onChange={onChangeInput}
+              value={input.pw}
+              name="pw"
+              className="login-input-inputBox"
+              type="text"
+            />
           </div>
           <button className="login-btn">로그인하기</button>
         </div>
