@@ -10,7 +10,8 @@ const Header = () => {
     history.push("/");
   }, []);
 
-  const handleLogin = useCallback(() => {
+  const logout = useCallback(() => {
+    localStorage.removeItem("token");
     history.push("/login");
   }, []);
 
@@ -18,6 +19,9 @@ const Header = () => {
     <div className="header">
       <div className="header-logo">
         <img onClick={handleHome} src={Logo} alt="logo" />
+      </div>
+      <div onClick={logout} className="header-logout">
+        로그아웃
       </div>
     </div>
   );

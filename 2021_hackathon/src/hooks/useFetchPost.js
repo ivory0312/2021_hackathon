@@ -17,7 +17,7 @@ const useFetchPost = () => {
     requestFetch();
   }, []);
 
-  return { data };
+  return { data, requestFetch };
 };
 
 export default useFetchPost;

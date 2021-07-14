@@ -5,10 +5,14 @@ import Comment from "../../components/Post/Comment/Comment";
 import Profile from "../../assets/profile.svg";
 import CommentIcon from "../../assets/comment.svg";
 import useFetchComment from "../../hooks/useFetchComment";
+import { useEffect } from "react";
 
 const Post = () => {
-  const { data } = useFetchPost();
+  const { data, requestFetch } = useFetchPost();
   const { item } = useFetchComment();
+  useEffect(() => {
+    requestFetch();
+  });
 
   return (
     <>
