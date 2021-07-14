@@ -18,10 +18,10 @@ export const getComment = async (postId) => {
   return data;
 };
 
-export const postLogin = async (id, pw) => {
+export const postLogin = async (input) => {
   const body = {
-    id,
-    pw,
+    id: input.id,
+    password: input.password,
   };
   const { data } = await customAxios.post("/auth/login", body);
 

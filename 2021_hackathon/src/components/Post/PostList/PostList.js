@@ -8,8 +8,8 @@ const PostList = () => {
   return (
     <>
       {data &&
-        data.map((item) => (
-          <div className="postList" onClick={() => onclick(item.id)}>
+        data.map((item, key) => (
+          <div key={key} className="postList" onClick={() => onclick(item.id)}>
             <div className="postList-top">
               <div className="postList-top-profile">
                 <div className="postList-top-profile-img">

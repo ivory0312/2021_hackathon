@@ -10,8 +10,6 @@ const Post = () => {
   const { data } = useFetchPost();
   const { item } = useFetchComment();
 
-  console.log(item);
-
   return (
     <>
       <PageTemplate>

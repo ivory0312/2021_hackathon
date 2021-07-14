@@ -19,9 +19,6 @@ const Header = () => {
       <div className="header-logo">
         <img onClick={handleHome} src={Logo} alt="logo" />
       </div>
-      <div onClick={handleLogin} className="header-login">
-        로그인
-      </div>
     </div>
   );
 };

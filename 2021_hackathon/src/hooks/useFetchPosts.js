@@ -18,7 +18,12 @@ const useFetchPosts = () => {
   };
 
   useEffect(() => {
-    requestFetch();
+    const loginCheck = localStorage.getItem("token");
+    if (loginCheck) {
+      requestFetch();
+    } else {
+      history.push("/login");
+    }
   }, []);
 
   return { data, onclick };

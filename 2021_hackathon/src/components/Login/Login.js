@@ -3,7 +3,7 @@ import useFetchLogin from "../../hooks/useFetchLogin";
 import "./Login.scss";
 
 const Login = () => {
-  const { data, input, onChangeInput, requestLogin } = useFetchLogin();
+  const { input, onChangeInput, requestLogin } = useFetchLogin();
   return (
     <>
       <div className="loginWrap">
@@ -21,13 +21,15 @@ const Login = () => {
             <div className="login-input-title">비밀번호</div>
             <input
               onChange={onChangeInput}
-              value={input.pw}
-              name="pw"
+              value={input.password}
+              name="password"
               className="login-input-inputBox"
-              type="text"
+              type="password"
             />
           </div>
-          <button className="login-btn">로그인하기</button>
+          <button onClick={requestLogin} className="login-btn">
+            로그인하기
+          </button>
         </div>
       </div>
     </>
